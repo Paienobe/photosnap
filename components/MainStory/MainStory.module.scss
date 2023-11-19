@@ -1,0 +1,35 @@
+@use "../../scss/utils/index" as utils;
+
+.main_story {
+  display: flex;
+  align-items: stretch;
+
+  > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    gap: utils.getRem(30);
+    position: relative;
+
+    p {
+      opacity: 0.5;
+    }
+
+    .hr {
+      width: utils.getRem(6);
+      height: 50%;
+      margin: 0;
+      background: var(--vertical_gradient);
+      border: none;
+      position: absolute;
+      left: 0;
+      display: block;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+}

@@ -7,7 +7,9 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <Image src={logo} alt="logo" />
+      <Link href="/">
+        <Image src={logo} alt="logo" />
+      </Link>
 
       <ul className={styles.navbar__link_list}>
         <li>

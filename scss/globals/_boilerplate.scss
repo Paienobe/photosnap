@@ -1,3 +1,5 @@
+@use "../utils/index" as utils;
+
 *,
 *::before,
 *::after {
@@ -20,4 +22,15 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+button {
+  font-size: utils.getRem(12);
+  letter-spacing: utils.getRem(2);
+  font-weight: bold;
+  border: none;
+}
+
+img {
+  display: block;
 }

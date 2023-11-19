@@ -1,0 +1,15 @@
+@use "/scss/utils/index" as utils;
+
+.invite_button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: utils.getRem(12) 0;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+}
