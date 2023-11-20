@@ -1,0 +1,7 @@
+.main {
+  &__cards_holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}

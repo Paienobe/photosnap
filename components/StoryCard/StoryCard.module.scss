@@ -1,0 +1,44 @@
+@use "../../scss/utils/index" as utils;
+
+.story_card {
+  position: relative;
+
+  &__text_holder {
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    inset: 0;
+    padding: 1rem 2rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+
+    > div {
+      width: 100%;
+    }
+
+    > div:last-of-type {
+      height: utils.getRem(5);
+      background: var(--horizontal_gradient);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    hr {
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    &:hover {
+      > div:last-of-type {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2rem);
+  }
+}

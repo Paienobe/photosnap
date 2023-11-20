@@ -12,6 +12,22 @@ import story_1_mobile from "@/assets/home/mobile/create-and-share.jpg";
 import story_2_mobile from "@/assets/home/mobile/beautiful-stories.jpg";
 import story_3_mobile from "@/assets/home/mobile/designed-for-everyone.jpg";
 
+import mountain_desktop from "@/assets/stories/desktop/mountains.jpg";
+import mountain_tab from "@/assets/stories/desktop/mountains.jpg";
+import mountain_mobile from "@/assets/stories/mobile/mountains.jpg";
+
+import city_desktop from "@/assets/stories/desktop/cityscapes.jpg";
+import city_tab from "@/assets/stories/desktop/cityscapes.jpg";
+import city_mobile from "@/assets/stories/mobile/cityscapes.jpg";
+
+import voyage_desktop from "@/assets/stories/desktop/18-days-voyage.jpg";
+import voyage_tab from "@/assets/stories/desktop/18-days-voyage.jpg";
+import voyage_mobile from "@/assets/stories/mobile/18-days-voyage.jpg";
+
+import architectural_desktop from "@/assets/stories/desktop/architecturals.jpg";
+import architectural_tab from "@/assets/stories/desktop/architecturals.jpg";
+import architectural_mobile from "@/assets/stories/mobile/architecturals.jpg";
+
 export const mainStories = [
   {
     id: uuid(),
@@ -44,6 +60,49 @@ export const mainStories = [
       desktop: story_3_desktop,
       tab: story_3_tab,
       mobile: story_3_mobile,
+    },
+  },
+];
+
+export const subStories = [
+  {
+    id: uuid(),
+    title: "The Mountains",
+    author: "John Appleseed",
+    images: {
+      desktop: mountain_desktop,
+      tab: mountain_tab,
+      mobile: mountain_mobile,
+    },
+  },
+  {
+    id: uuid(),
+    title: "Sunset Cityscapes",
+    author: "Benjamin Cruz",
+    images: {
+      desktop: city_desktop,
+      tab: city_tab,
+      mobile: city_mobile,
+    },
+  },
+  {
+    id: uuid(),
+    title: "18 Days Voyage",
+    author: "Alexei Borodin",
+    images: {
+      desktop: voyage_desktop,
+      tab: voyage_tab,
+      mobile: voyage_mobile,
+    },
+  },
+  {
+    id: uuid(),
+    title: "Architecturals",
+    author: "Samantha Brooke",
+    images: {
+      desktop: architectural_desktop,
+      tab: architectural_tab,
+      mobile: architectural_mobile,
     },
   },
 ];
