@@ -28,6 +28,10 @@ import architectural_desktop from "@/assets/stories/desktop/architecturals.jpg";
 import architectural_tab from "@/assets/stories/desktop/architecturals.jpg";
 import architectural_mobile from "@/assets/stories/mobile/architecturals.jpg";
 
+import Responsiveness from "@/components/SVGS/Responsiveness/Responsiveness";
+import NoLimit from "@/components/SVGS/NoLimit/NoLimit";
+import Embed from "@/components/SVGS/Embed/Embed";
+
 export const mainStories = [
   {
     id: uuid(),
@@ -104,5 +108,29 @@ export const subStories = [
       tab: architectural_tab,
       mobile: architectural_mobile,
     },
+  },
+];
+
+export const benefits = [
+  {
+    id: uuid(),
+    icon: Responsiveness,
+    title: "100% Responsive",
+    description:
+      "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+  },
+  {
+    id: uuid(),
+    icon: NoLimit,
+    title: "No Photo Upload Limit",
+    description:
+      "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+  },
+  {
+    id: uuid(),
+    icon: Embed,
+    title: "Available to Embed",
+    description:
+      "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
   },
 ];
