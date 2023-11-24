@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import Image from "next/image";
-import logo from "@/assets/shared/desktop/logo.svg";
 import Link from "next/link";
+import Logo from "../SVGS/Logo/Logo";
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link href="/">
-        <Image src={logo} alt="logo" />
+        <Logo color="black" />
       </Link>
 
       <ul className={styles.navbar__link_list}>

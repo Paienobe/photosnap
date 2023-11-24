@@ -19,7 +19,7 @@ export default function Home() {
 
       <section className={styles.main__benefits_section}>
         {benefits.map((benefit) => {
-          return <Benefit benefit={benefit} />;
+          return <Benefit key={benefit.id} benefit={benefit} />;
         })}
       </section>
     </main>
