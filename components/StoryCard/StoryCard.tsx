@@ -14,6 +14,7 @@ const StoryCard = ({ story }: StoryCardProps) => {
 
       <div className={styles.story_card__text_holder}>
         <div>
+          <p>{story?.date}</p>
           <h2>{story.title}</h2>
           <p>by {story.author}</p>
           <hr />

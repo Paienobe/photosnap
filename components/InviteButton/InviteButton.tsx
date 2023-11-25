@@ -2,10 +2,11 @@ import React from "react";
 import { InviteButtonProps } from "./types";
 import styles from "./InviteButton.module.scss";
 
-const InviteButton = ({ color }: InviteButtonProps) => {
+const InviteButton = ({ color, text }: InviteButtonProps) => {
+  const buttonText = !text ? "GET AN INVITE" : text;
   return (
     <button className={styles.invite_button} style={{ color: color }}>
-      <span>GET AN INVITE</span> <ButtonArrow color={color} />
+      <span>{buttonText}</span> <ButtonArrow color={color} />
     </button>
   );
 };

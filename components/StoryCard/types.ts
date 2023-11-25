@@ -5,6 +5,7 @@ export type StoryCardProps = {
     id: string;
     title: string;
     author: string;
+    date?: string;
     images: {
       desktop: StaticImageData;
       tab: StaticImageData;
