@@ -1,0 +1,28 @@
+@use "../../scss/utils/index" as utils;
+
+.beta_banner {
+  position: relative;
+
+  > div:first-of-type {
+    position: absolute;
+    left: 0;
+    background: var(--vertical_gradient);
+    width: utils.getRem(6);
+    height: 100%;
+  }
+
+  > div:last-of-type {
+    color: white;
+    position: absolute;
+    inset: 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      width: 30%;
+    }
+  }
+}

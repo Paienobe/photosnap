@@ -9,7 +9,7 @@
   text-align: center;
 
   &__svg_holder {
-    width: utils.getRem(72);
+    min-width: utils.getRem(72);
     height: utils.getRem(72);
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
   }
 
   h2 {
-    margin: 2rem 0 1rem 0;
+    margin: 2.5rem 0 1rem 0;
   }
 
   p {
