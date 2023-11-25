@@ -25,6 +25,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
+
+    @include utils.breakpoint-down("small-desktop") {
+      width: 60%;
+    }
   }
 
   &__body {

@@ -1,0 +1,12 @@
+// breakpoints sass map
+$breakpoints-down: (
+  "small-desktop": 1024px,
+  "tablets": 850px,
+  "mobile": 480px,
+);
+
+@mixin breakpoint-down($size) {
+  @media screen and (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

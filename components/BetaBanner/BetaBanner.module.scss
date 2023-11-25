@@ -23,6 +23,10 @@
 
     h1 {
       width: 30%;
+
+      @include utils.breakpoint-down("small-desktop") {
+        width: 45%;
+      }
     }
   }
 }

@@ -41,5 +41,9 @@
       margin: 1rem 0;
       line-height: utils.getRem(25);
     }
+
+    @include utils.breakpoint-down("small-desktop") {
+      width: 45%;
+    }
   }
 }
