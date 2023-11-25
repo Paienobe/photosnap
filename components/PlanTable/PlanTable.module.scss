@@ -29,6 +29,10 @@
     @include utils.breakpoint-down("small-desktop") {
       width: 60%;
     }
+
+    @include utils.breakpoint-down("tablets") {
+      width: 90%;
+    }
   }
 
   &__body {

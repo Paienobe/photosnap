@@ -28,6 +28,10 @@
       display: block;
       margin-right: auto;
     }
+
+    @include utils.breakpoint-down("tablets") {
+      width: 60%;
+    }
   }
 
   > div:last-of-type {
@@ -41,6 +45,10 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+
+    @include utils.breakpoint-down("tablets") {
+      width: 40%;
     }
   }
 

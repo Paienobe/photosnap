@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./BetaBanner.module.scss";
 import bannerDesktop from "@/assets/shared/desktop/bg-beta.jpg";
-import bannerTab from "@/assets/shared/desktop/bg-beta.jpg";
-import bannerMobile from "@/assets/shared/desktop/bg-beta.jpg";
+import bannerTab from "@/assets/shared/tablet/bg-beta.jpg";
+import bannerMobile from "@/assets/shared/mobile/bg-beta.jpg";
 import InviteButton from "../InviteButton/InviteButton";
 
 const BetaBanner = () => {

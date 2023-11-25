@@ -5,4 +5,5 @@ export type BenefitProps = {
     title: string;
     description: string;
   };
+  inHome?: boolean;
 };

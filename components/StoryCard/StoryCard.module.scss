@@ -46,4 +46,8 @@
   &:hover {
     transform: translateY(-2rem);
   }
+
+  @include utils.breakpoint-down("tablets") {
+    width: calc(100% / 2);
+  }
 }

@@ -45,5 +45,9 @@
     @include utils.breakpoint-down("small-desktop") {
       width: 45%;
     }
+
+    @include utils.breakpoint-down("tablets") {
+      left: 5%;
+    }
   }
 }

@@ -23,4 +23,14 @@
   p {
     opacity: 0.5;
   }
+
+  @include utils.breakpoint-down("tablets") {
+    width: 45%;
+  }
+}
+
+.benefit_home {
+  @include utils.breakpoint-down("tablets") {
+    width: 65%;
+  }
 }

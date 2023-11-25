@@ -39,4 +39,8 @@
       color: black;
     }
   }
+
+  @include utils.breakpoint-down("tablets") {
+    width: 90%;
+  }
 }
