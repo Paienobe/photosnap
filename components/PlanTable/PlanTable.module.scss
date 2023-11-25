@@ -1,0 +1,39 @@
+@use "../../scss//utils/index" as utils;
+
+.plan_table {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  font-size: utils.getRem(12);
+  letter-spacing: utils.getRem(2);
+  font-weight: bold;
+
+  h1 {
+    text-align: center;
+    margin-bottom: utils.getRem(20);
+  }
+
+  &__head,
+  &__body {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid black;
+    padding: 1.5rem 1rem;
+
+    > div:last-of-type {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__body {
+    border-color: rgba(0, 0, 0, 0.25);
+
+    img {
+      margin-left: 1rem;
+      width: utils.getRem(12);
+      height: utils.getRem(12);
+    }
+  }
+}

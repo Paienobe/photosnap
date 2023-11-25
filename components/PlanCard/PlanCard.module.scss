@@ -1,0 +1,55 @@
+@use "../../scss/utils/index" as utils;
+
+.plan_card {
+  text-align: center;
+  background-color: var(--light-gray);
+  padding: 2.5rem 2rem;
+
+  button {
+    width: 100%;
+    padding: utils.getRem(12);
+    margin-top: 3rem;
+    background-color: black;
+    color: white;
+
+    &:hover {
+      background-color: var(--light-gray-2);
+      color: black;
+    }
+  }
+
+  &:nth-of-type(even) {
+    padding: 5rem 2rem;
+    background-color: black;
+    color: white;
+    position: relative;
+
+    button {
+      background-color: white;
+      color: black;
+
+      &:hover {
+        background-color: var(--light-gray-2);
+      }
+    }
+
+    > div {
+      position: absolute;
+      width: 100%;
+      height: utils.getRem(6);
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--horizontal_gradient);
+    }
+  }
+
+  p {
+    opacity: 0.5;
+
+    &:first-of-type {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
