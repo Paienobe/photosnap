@@ -50,4 +50,8 @@
   @include utils.breakpoint-down("tablets") {
     width: calc(100% / 2);
   }
+
+  @include utils.breakpoint-down("mobile") {
+    width: 100%;
+  }
 }

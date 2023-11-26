@@ -22,6 +22,10 @@
         opacity: 0.5;
       }
     }
+
+    button {
+      display: none;
+    }
   }
 
   button {
@@ -40,7 +44,62 @@
     }
   }
 
+  button.navbar__menu {
+    display: none;
+  }
+
   @include utils.breakpoint-down("tablets") {
     width: 90%;
+    padding: 1rem 0;
+  }
+
+  @include utils.breakpoint-down("mobile") {
+    width: 100%;
+    padding: 1.5rem 5%;
+    position: relative;
+
+    .navbar > button:not(&__menu) {
+      display: none;
+    }
+
+    button.navbar__menu {
+      display: block;
+      background-color: transparent;
+      width: fit-content;
+      padding: 0;
+    }
+
+    &__link_list {
+      position: absolute;
+      top: 100%;
+      flex-direction: column;
+      background-color: white;
+      width: 100vw;
+      margin: auto;
+      left: 0;
+      padding: 1rem;
+      gap: 1rem;
+      opacity: 0;
+
+      > button {
+        display: block;
+        width: 100%;
+      }
+
+      a {
+        font-size: utils.getRem(15);
+      }
+
+      li:last-of-type {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--light-gray);
+        padding-bottom: utils.getRem(15);
+      }
+    }
+
+    &__visible_menu {
+      opacity: 1;
+    }
   }
 }

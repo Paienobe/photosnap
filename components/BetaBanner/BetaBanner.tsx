@@ -11,8 +11,8 @@ const BetaBanner = () => {
       <div></div>
 
       <picture>
-        <source media="(max-width:850px)" srcSet={bannerTab.src} />
         <source media="(max-width:480px)" srcSet={bannerMobile.src} />
+        <source media="(max-width:850px)" srcSet={bannerTab.src} />
         <img src={bannerDesktop.src} alt="" />
       </picture>
 

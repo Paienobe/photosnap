@@ -24,9 +24,17 @@ const PlanTable = () => {
             <div>{feature.title}</div>
 
             <div>
-              <div>{feature.basic && <Image src={check} alt="" />}</div>
-              <div>{feature.pro && <Image src={check} alt="" />}</div>
-              <div>{feature.business && <Image src={check} alt="" />}</div>
+              <div>
+                <span>basic</span>
+                {feature.basic && <Image src={check} alt="" />}
+              </div>
+              <div>
+                <span>pro</span> {feature.pro && <Image src={check} alt="" />}
+              </div>
+              <div>
+                <span>business</span>
+                {feature.business && <Image src={check} alt="" />}
+              </div>
             </div>
           </section>
         );

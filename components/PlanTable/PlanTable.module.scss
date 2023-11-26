@@ -35,6 +35,14 @@
     }
   }
 
+  &__head {
+    @include utils.breakpoint-down("mobile") {
+      > div:last-of-type {
+        display: none;
+      }
+    }
+  }
+
   &__body {
     border-color: rgba(0, 0, 0, 0.25);
 
@@ -42,6 +50,34 @@
       margin-left: 1rem;
       width: utils.getRem(12);
       height: utils.getRem(12);
+    }
+
+    span {
+      display: none;
+    }
+
+    @include utils.breakpoint-down("mobile") {
+      > div:first-of-type {
+        grid-row: 1/1;
+        grid-column: 1/3;
+        padding-bottom: 1rem;
+      }
+
+      > div:last-of-type {
+        text-transform: uppercase;
+        grid-row: 2/2;
+        grid-column: 1/3;
+      }
+
+      span {
+        display: inline;
+        opacity: 0.5;
+      }
+
+      img {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
     }
   }
 }

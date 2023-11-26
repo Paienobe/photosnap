@@ -14,5 +14,9 @@
     @include utils.breakpoint-down("tablets") {
       flex-direction: column;
     }
+
+    @include utils.breakpoint-down("mobile") {
+      width: 90%;
+    }
   }
 }

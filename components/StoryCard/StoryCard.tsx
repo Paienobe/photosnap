@@ -7,8 +7,8 @@ const StoryCard = ({ story }: StoryCardProps) => {
   return (
     <div className={styles.story_card}>
       <picture>
-        <source media="(max-width:850px)" srcSet={story.images.tab.src} />
         <source media="(max-width:480px)" srcSet={story.images.mobile.src} />
+        <source media="(max-width:850px)" srcSet={story.images.tab.src} />
         <img src={story.images.desktop.src} alt="" />
       </picture>
 

@@ -49,5 +49,16 @@
     @include utils.breakpoint-down("tablets") {
       left: 5%;
     }
+
+    @include utils.breakpoint-down("tablets") {
+      position: static;
+      background-color: black;
+      width: 100%;
+      padding: 4rem 2rem;
+    }
+  }
+
+  @include utils.breakpoint-down("mobile") {
+    position: static;
   }
 }

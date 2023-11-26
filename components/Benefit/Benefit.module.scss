@@ -27,10 +27,18 @@
   @include utils.breakpoint-down("tablets") {
     width: 45%;
   }
+
+  @include utils.breakpoint-down("mobile") {
+    width: 100%;
+  }
 }
 
 .benefit_home {
   @include utils.breakpoint-down("tablets") {
     width: 65%;
+  }
+
+  @include utils.breakpoint-down("mobile") {
+    width: 100%;
   }
 }

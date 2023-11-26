@@ -24,6 +24,11 @@
 
     button {
       margin-left: auto;
+
+      @include utils.breakpoint-down("mobile") {
+        grid-row: 4/4;
+        margin: 0;
+      }
     }
 
     p {
@@ -33,12 +38,22 @@
       @include utils.breakpoint-down("tablets") {
         grid-row: 3/3;
       }
+
+      @include utils.breakpoint-down("mobile") {
+        grid-row: 5/5;
+      }
     }
 
     @include utils.breakpoint-down("tablets") {
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem 0;
       width: 90%;
+    }
+
+    @include utils.breakpoint-down("mobile") {
+      grid-template-columns: 1fr;
+      place-items: center;
+      gap: 1rem;
     }
   }
 
@@ -55,6 +70,13 @@
       grid-row: 2/2;
       grid-column: 1/2;
       padding-bottom: 3rem;
+    }
+
+    @include utils.breakpoint-down("mobile") {
+      flex-direction: column;
+      align-items: center;
+      grid-row: 3/3;
+      height: 10rem;
     }
   }
 
@@ -73,6 +95,16 @@
 
     @include utils.breakpoint-down("tablets") {
       grid-row: 3/3;
+    }
+
+    @include utils.breakpoint-down("mobile") {
+      grid-row: 2/2;
+    }
+  }
+
+  svg:first-of-type {
+    @include utils.breakpoint-down("mobile") {
+      grid-row: 1/1;
     }
   }
 }

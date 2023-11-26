@@ -27,10 +27,23 @@
       left: 0;
       display: block;
       margin-right: auto;
+
+      @include utils.breakpoint-down("mobile") {
+        top: 0;
+        left: 6%;
+        width: 25%;
+        height: utils.getRem(6);
+        background: var(--horizontal_gradient);
+      }
     }
 
     @include utils.breakpoint-down("tablets") {
       width: 60%;
+    }
+
+    @include utils.breakpoint-down("mobile") {
+      width: 100%;
+      padding: 4rem 6%;
     }
   }
 
@@ -50,9 +63,21 @@
     @include utils.breakpoint-down("tablets") {
       width: 40%;
     }
+
+    @include utils.breakpoint-down("mobile") {
+      width: 100%;
+    }
   }
 
   &:nth-of-type(even) {
     flex-direction: row-reverse;
+
+    @include utils.breakpoint-down("mobile") {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include utils.breakpoint-down("mobile") {
+    flex-direction: column-reverse;
   }
 }

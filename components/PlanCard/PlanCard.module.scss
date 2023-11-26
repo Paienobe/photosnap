@@ -52,6 +52,16 @@
         background: var(--vertical_gradient);
       }
     }
+
+    @include utils.breakpoint-down("mobile") {
+      padding: 4rem 2rem;
+
+      > div {
+        width: 100%;
+        height: utils.getRem(6);
+        background: var(--horizontal_gradient);
+      }
+    }
   }
 
   p {
@@ -71,11 +81,27 @@
     p:first-of-type {
       grid-row: 2/2;
       margin: 0;
+
+      @include utils.breakpoint-down("mobile") {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+      }
     }
 
     h1,
     p:last-of-type {
       text-align: right;
+    }
+  }
+
+  @include utils.breakpoint-down("tablets") {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1,
+    p:last-of-type {
+      text-align: center;
     }
   }
 }
